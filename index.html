@@ -1,0 +1,157 @@
+<!-- index.html -->
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop&Shop</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="greeting"></h1>
+      <h1>Stop&Shop</h1>
+    </header>
+    
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="womenFashion.html">Women's Fashion</a>
+      <a href="MensFashion.html">Men's Fashion</a>
+      <a href="kidsFashion.html">Kids' Fashion</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="sale.html">Sale</a>
+      <a href="LoginUser.html">Login/SignUp</a>
+    </nav>
+    <div id="notifybar">
+      
+    </div>
+
+    <section style="background-image: url(https://img.freepik.com/free-photo/shopping-cart-with-wooden-elements_23-2148879396.jpg?size=626&ext=jpg&ga=GA1.1.1091253011.1701182403&semt=ais);">
+      <!-- 1 -->
+    <!-- Featured Products -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/sweatshirt/g/w/9/-original-imagu22a8rzqqcsd.jpeg?q=70" alt="Product 2">
+      <h2>Women Full Sleeve Solid Sweatshirt</h2>
+      <p>Price: RS.2999</p>
+      <button class="add-to-cart" onclick="addToCart('Women Full Sleeve Solid Sweatshirt', 2999)">Add to Cart</button>
+    </div>
+    
+<!-- 2 -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/n/z/a/l-men-slim-fit-spread-collar-stylish-striped-formal-half-shirts-original-imagh6f3zguzyk77.jpeg?q=70" alt="Product 2">
+      <h2>Men Slim Fit Casual Shirt</h2>
+      <p>Price: RS.1299</p>
+      <button class="add-to-cart" onclick="addToCart('Men Slim Fit Collar Casual Shirt', 1299)">Add to Cart</button>
+    </div>
+
+    <!-- Add more products as needed -->
+
+    <!-- Shopping Cart -->
+    <div id="shopping-cart" style="background-image: url(https://img.freepik.com/free-photo/sales-concept-with-cart-bags_23-2147730827.jpg?size=626&ext=jpg&ga=GA1.1.1091253011.1701182403&semt=ais);">
+      <h2 align="center">Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <p align="center"><button type="submit" id="ordered" onclick="ordered()">Place Order</button></p>
+      <h3>Total: RS.<span id="cart-total">0.00</span></h3>
+    </div>
+<!-- 3 -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/q/r/j/-original-imagzjg25cg9wsrj.jpeg?q=70" alt="Product 2">
+      <h2>Running Shoes For Men</h2>
+      <p>Price: RS.999</p>
+      <button class="add-to-cart" onclick="addToCart('Running Shoes For Men', 999)">Add to Cart</button>
+    </div>
+<!-- 4 -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/kids-apparel-combo/a/7/i/1-2-years-kids-wear-002-ortugal-original-imagjwngvhgyyq5w.jpeg?q=70" alt="Product 2">
+      <h2>Baby Boys & Baby Girls Party wear Shirt Pant, Jacket, Bow Tie</h2>
+      <p>Price: RS.1999</p>
+      <button class="add-to-cart" onclick="addToCart('Baby Boys & Baby Girls Party wear Shirt Pant, Jacket, Bow Tie ', 1999)">Add to Cart</button>
+    </div>
+<!-- 5 -->
+<div class="product">
+  <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/watch/v/w/o/-original-imagta7uyupbfzsf.jpeg?q=70" alt="Product 1">
+  <h2>Minimalists Analog Watch</h2>
+  <p>Price: RS.4999</p>
+  <button class="add-to-cart" onclick="addToCart('Minimalists Analog Watch', 4999)">Add to Cart</button>
+</div>
+<!-- 6 -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/kurta/n/b/c/l-c-k-ketaki-fashion-original-imagqsgsaztvf5vj.jpeg?q=70" alt="Product 2">
+      <h2>Pack of 3 Women Printed Crepe Straight Kurta</h2>
+      <p>Price: RS.3499</p>
+      <button class="add-to-cart" onclick="addToCart('Pack of 3 Women Printed Crepe Straight Kurta', 3499)">Add to Cart</button>
+    </div>
+<!-- 7 -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/6/g/a/9-whrb60-lejano-white-original-imagmsuf5yrdhgpj.jpeg?q=70" alt="Product 2">
+      <h2>Sneakers For Men  (White, Black)</h2>
+      <p>Price: RS.1299</p>
+      <button class="add-to-cart" onclick="addToCart('Sneakers For Men  (White, Black)', 1299)">Add to Cart</button>
+    </div>
+<!-- 8 -->
+    <div class="product">
+      <img src="https://cdn.skatedeluxe.com/thumb/k4-V8VL_XRCS_s13YOslBwblYn4=/fit-in/600x700/filters:fill(white):brightness(-4)/product/161098-2-REELL-Baggy.jpg" alt="Product 2">
+      <h2>Classic Men's Suit</h2>
+      <p>Price: RS.129.99</p>
+      <button class="add-to-cart" onclick="addToCart('Classic Men\'s Suit', 129.99)">Add to Cart</button>
+    </div>
+<!-- 9 -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/e/i/h/xxl-men-regular-slim-fit-solid-button-down-collar-formal-shirt-original-imaggvvnywmgthyq.jpeg?q=70" alt="Product 2">
+      <h2>Men Slim Fit Solid Spread Collar Formal Shirt</h2>
+      <p>Price: RS.4999</p>
+      <button class="add-to-cart" onclick="addToCart('Men Slim Fit Solid Spread Collar Formal Shirt', 4999)">Add to Cart</button>
+    </div>
+<!-- 10 -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/sari/4/2/c/free-sarees-new2023-simple-cotton-silk-design-simple-sarees-2023-original-imagmnm2aucpcxzu.jpeg?q=70" alt="Product 2">
+      <h2>Woven Kanjivaram Silk Blend, Cotton Blend Saree</h2>
+      <p>Price: RS.2499</p>
+      <button class="add-to-cart" onclick="addToCart('Woven Kanjivaram Silk Blend, Cotton Blend Saree', 2499)">Add to Cart</button>
+    </div>
+<!-- 11 -->
+    <div class="product">
+      <img src="https://cdn.skatedeluxe.com/thumb/k4-V8VL_XRCS_s13YOslBwblYn4=/fit-in/600x700/filters:fill(white):brightness(-4)/product/161098-2-REELL-Baggy.jpg" alt="Product 2">
+      <h2>Classic Men's Suit</h2>
+      <p>Price: RS.129.99</p>
+      <button class="add-to-cart" onclick="addToCart('Classic Men\'s Suit', 129.99)">Add to Cart</button>
+    </div>
+<!-- 12 -->
+    <div class="product">
+      <img src="https://cdn.skatedeluxe.com/thumb/k4-V8VL_XRCS_s13YOslBwblYn4=/fit-in/600x700/filters:fill(white):brightness(-4)/product/161098-2-REELL-Baggy.jpg" alt="Product 2">
+      <h2>Classic Men's Suit</h2>
+      <p>Price: RS.129.99</p>
+      <button class="add-to-cart" onclick="addToCart('Classic Men\'s Suit', 129.99)">Add to Cart</button>
+    </div>
+</section>
+<section>
+      <div id="discription">
+        <!-- Additional Content -->
+        <div id="about-us">
+          <h2>About Us</h2>
+          <p>
+            Welcome to Stop&Shop, your go-to destination for the latest fashion
+            trends. We offer a curated collection of high-quality clothing and
+            accessories for men, women, and kids. Our mission is to provide a
+            seamless and enjoyable shopping experience for fashion enthusiasts
+            around the world.
+          </p>
+        </div>
+  
+        <div id="featured-products">
+          <h2>Featured Products</h2>
+          <p>
+            Explore our handpicked selection of featured products that showcase
+            the best of this season's fashion. From stylish dresses to classic
+            suits, we have something for everyone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>

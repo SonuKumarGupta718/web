@@ -1,0 +1,187 @@
+/* styles.css */
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f8; /* Light blue background */
+    color: #333; /* Dark text color */
+  }
+  
+  header {
+    background-color: #21f3a3; /* Blue header background */
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* White text color */
+  }
+  
+  nav {
+    background-color: #1565c0; /* Darker blue navigation background */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: background-color 0.3s; /* Add transition for smooth effect */
+  }
+  
+  nav a:hover {
+    background-color: #ffeb3b; /* Yellow background on hover */
+  }
+  
+  section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product {
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff; /* White background for product boxes */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product img {
+    width: 300px;
+    height: 250px;
+    
+    border: 2px solid #1565c0; /* Border color matches navigation background */
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .product h2 {
+    color: #333; /* Dark text color */
+  }
+  
+  .product p {
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    background-color: #1565c0; /* Darker blue button background */
+    color: #fff; /* White text color for buttons */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #shopping-cart {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for shopping cart */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: auto;
+    width: auto;
+  }
+  
+  #cart-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    margin-bottom: 8px;
+  }
+
+  #delete{
+    color:red;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px  ;
+    cursor: pointer;
+  }
+  #cartitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  #btn{
+    padding: 5px;
+    background-color: red;
+    color:white;
+    border-radius: 6px;
+    display: none;
+    cursor:pointer;
+  }
+  input{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding-left: 2px;
+  }
+  
+  #discription{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border:1px solid black;
+    padding: 6px;
+    border-radius: 8px;
+    flex-direction: column;
+  }
+  #loginuserpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer{
+    text-align: center;
+  }
+
+ 
+  #login-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.256);
+    border: 2px solid rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    border-radius: 9px;
+  }
+
+  #loginitem{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #login-btn{
+    padding: 3px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  #login-signup{
+    position: absolute;
+    left: 28%;
+    top: 40px;
+  }
+  #notifybar{
+    text-align: center;
+    width: 100%;
+    height: 20px;
+  }
+  #ordered{
+    background-color: #1565c0;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

@@ -1,0 +1,59 @@
+<!-- men-fashion.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Fashion - Stop&Shop</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="greeting"></h1>
+    <h1>Stop&Shop</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="womenFashion.html">Women's Fashion</a>
+    <a href="MensFashion.html">Men's Fashion</a>
+    <a href="kidsFashion.html">Kids' Fashion</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="sale.html">Sale</a>
+    <a href="LoginUser.html">Login/SignUp</a>
+  </nav>
+  <div id="notifybar">
+      
+  </div>
+
+  <section style="background-image: url(https://img.freepik.com/free-photo/shopping-cart-with-wooden-elements_23-2148879396.jpg?size=626&ext=jpg&ga=GA1.1.1091253011.1701182403&semt=ais);">
+    <!-- Men's Fashion Products -->
+    <div class="product">
+      <img src="https://media.samyakk.com/tagalys/product_images/h/f/hf1924.jpg" alt="Men's Product 1">
+      <h2>Classic Suit</h2>
+      <p>Price: RS.149.99</p>
+      <button class="add-to-cart" onclick="addToCart('Classic Suit', 149.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://www.bbstasarim.com.tr/uploads-219276-Iblis-avc%C4%B1s%C4%B1-anime-g%C3%B6zler-cosplay-t-shirt-casual-1-img.jpg" alt="Men's Product 2">
+      <h2>Casual T-Shirt </h2>
+      <p>Price: RS.39.99</p>
+      <button class="add-to-cart" onclick="addToCart('Casual T-Shirt and Jeans', 39.99)">Add to Cart</button>
+    </div>
+      <!-- Shopping Cart -->
+<div id="shopping-cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: RS.<span id="cart-total">0.00</span></p>
+    <button type="submit" id="ordered" onclick="ordered()">Place Order</button>
+</div>
+
+    <!-- Add more men's fashion products as needed -->
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

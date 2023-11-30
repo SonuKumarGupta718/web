@@ -1,0 +1,122 @@
+<!-- sale.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sale - Stop&Shop</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="greeting"></h1>
+    <h1>Stop&Shop</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="womenFashion.html">Women's Fashion</a>
+    <a href="MensFashion.html">Men's Fashion</a>
+    <a href="kidsFashion.html">Kids' Fashion</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="sale.html">Sale</a>
+    <a href="LoginUser.html">Login/SignUp</a>
+  </nav>
+  <div id="notifybar">
+      
+  </div>
+
+  <section style="background-image: url(https://img.freepik.com/free-photo/shopping-cart-with-wooden-elements_23-2148879396.jpg?size=626&ext=jpg&ga=GA1.1.1091253011.1701182403&semt=ais);">
+    <!-- Sale Items -->
+    <div class="product">
+      <img src="https://media.kohlsimg.com/is/image/kohls/5945295?wid=240&hei=240&op_sharpen=1" alt="Sale Item 1">
+      <h2>Clearance Summer Dress</h2>
+      <p>Original Price: RS.69.99</p>
+      <p>Sale Price: RS.39.99</p>
+      <button class="add-to-cart" onclick="addToCart('Clearance Summer Dress', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTcs1ONFfKyseccqbkdpmRpKtV7Eu8niiiQ&usqp=CAU" alt="Sale Item 2">
+      <h2>Discounted Men's Shirt</h2>
+      <p>Original Price: RS.34.99</p>
+      <p>Sale Price: RS.19.99</p>
+      <button class="add-to-cart" onclick="addToCart('Discounted Men\'s Shirt', 19.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/kp2y2kw0/t-shirt/m/x/q/m-round-5-noygb-m-inktees-original-imag3egz8xnug32h.jpeg?q=70" alt="Sale Item 2">
+      <h2>Pack of 5 Men Solid Round Neck Polyester Multicolor T-Shirt</h2>
+      <p>Original Price: RS.3499</p>
+      <p>Sale Price: RS.1999</p>
+      <button class="add-to-cart" onclick="addToCart('Pack of 5 Men Solid Round Neck Polyester Multicolor T-Shirt', 1999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/3/d/i/l-jc22-hd-fs-black-jmc-pckt-jump-cuts-original-imagg3yxfk48y7nt.jpeg?q=70" alt="Men Printed Hooded Neck Cotton Blend White, Black T-Shirt">
+      <h2>Men Printed Hooded Neck Cotton Blend White, Black T-Shirt</h2>
+      <p>Original Price: RS.1500</p>
+      <p>Sale Price: RS.750</p>
+      <button class="add-to-cart" onclick="addToCart('Men Printed Hooded Neck Cotton Blend White, Black T-Shirt', 750)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/5/r/g/l-men-gym-vest-lion-black-u-boss-sport-original-imagh4tvcjkygjsu.jpeg?q=70" alt="Men Typography Round Neck Reversible Modal Black T-Shirt">
+      <h2>Men Typography Round Neck Reversible Modal Black T-Shirt</h2>
+      <p>Original Price: RS.1199</p>
+      <p>Sale Price: RS.499</p>
+      <button class="add-to-cart" onclick="addToCart('Men Typography Round Neck Reversible Modal Black T-Shirt', 499.00)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/t/o/7/xl-su-08-02-26-12-06-03-fabflee-original-imagkb2zp2ynvbhw.jpeg?q=70" alt="Pack of 6 Women Printed Round Neck Modal Multicolor T-Shirt">
+      <h2>Pack of 6 Women Printed Round Neck Modal Multicolor T-Shirt</h2>
+      <p>Original Price: RS.1299</p>
+      <p>Sale Price: RS.599</p>
+      <button class="add-to-cart" onclick="addToCart('Pack of 6 Women Printed Round Neck Modal Multicolor T-Shirt', 599.00)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/g/t/e/l-21387220-chemistry-original-imagtsc79fgyerhv.jpeg?q=70" alt="Women Self Design Polo Neck Modal Green T-Shirt">
+      <h2>Women Self Design Polo Neck Modal Green T-Shirt</h2>
+      <p>Original Price: RS.899.00</p>
+      <p>Sale Price: RS.299.00</p>
+      <button class="add-to-cart" onclick="addToCart('Women Self Design Polo Neck Modal Green T-Shirt', 299.00)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/o/k/4/-original-imagg6r25hszygbr.jpeg?q=70" alt="Jaguar Football Shoes For Men  (Black, Orange)
+      ">
+      <h2>Jaguar Football Shoes For Men  (Black, Orange)
+      </h2>
+      <p>Original Price: RS.6999.99</p>
+      <p>Sale Price: RS.2999.99</p>
+      <button class="add-to-cart" onclick="addToCart('Jaguar Football Shoes For Men' , 2999.99
+      )">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/s/j/i/6-mrj1906-6-aadi-white-grey-original-imagdfyfmxk7thzb-bb.jpeg?q=70" alt="Synthetic Leather Trendy|Walking|Outdoor|Daily Use For Men">
+      <h2>Synthetic Leather Trendy|Walking|Outdoor|Daily Use For Men  (White, Grey)</h2>
+      <p>Original Price: RS.1340.99</p>
+      <p>Sale Price: RS.799.99</p>
+      <button class="add-to-cart" onclick="addToCart('Synthetic Leather Trendy|Walking|Outdoor|Daily Use For Men ', 799.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shopsy-slipper-flip-flop/p/n/j/6-sosu-375-brown-sosu-brown-original-imagrdeucep8sftt.jpeg?q=70" alt="All Seasons Trendy Flip Flops ">
+      <h2>All Seasons Trendy Flip Flops </h2>
+      <p>Original Price: RS.199.99</p>
+      <p>Sale Price: RS.99.00</p>
+      <button class="add-to-cart" onclick="addToCart('All Seasons Trendy Flip Flops  ', 99.00)">Add to Cart</button>
+    </div>
+      <!-- Shopping Cart -->
+<div id="shopping-cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: RS.<span id="cart-total">0.00</span></p>
+    <button type="submit" id="ordered" onclick="ordered()">Place Order</button>
+</div>
+
+    <!-- Add more sale items as needed -->
+  </section>
+ 
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>

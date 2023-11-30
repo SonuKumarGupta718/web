@@ -1,0 +1,113 @@
+<!-- accessories.html -->
+<!-- accessories.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessories - Stop&Shop</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="greeting"></h1>
+    <h1>Stop&Shop</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="womenFashion.html">Women's Fashion</a>
+    <a href="MensFashion.html">Men's Fashion</a>
+    <a href="kidsFashion.html">Kids' Fashion</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="sale.html">Sale</a>
+    <a href="LoginUser.html">Login/SignUp</a>
+  </nav>
+  <div id="notifybar">
+      
+  </div>
+
+  <section style="background-image: url(https://img.freepik.com/free-photo/shopping-cart-with-wooden-elements_23-2148879396.jpg?size=626&ext=jpg&ga=GA1.1.1091253011.1701182403&semt=ais);">
+    <!-- Accessories Products -->
+    <div class="product">
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRlRFw3aXiszxvwv7zZV52O2aPeh7VbqOFlkn7R0bVLENz14HaCjxqWmagYtHPZRnxOdSrEvFSAPRLw7XAvFesu7yAiSiMA6rCxVa9p9FSjNO2MTRL080uZRAs" alt="Accessory 1">
+      <h2>Stylish Sunglasses</h2>
+      <p>Price: RS.19.99</p>
+      <button class="add-to-cart" onclick="addToCart('Stylish Sunglasses', 19.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://eske.in/cdn/shop/products/BA-568-Black_HS_-Croco_1_1600x.png?v=1689060214" alt="Accessory 2">
+      <h2>Leather handbag</h2>
+      <p>Price: RS.499</p>
+      <button class="add-to-cart" onclick="addToCart('Leather handing', 499)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/416/416/kyhlfgw0/arm-sleeve/e/0/n/free-no-1-nylon-arm-sleeve-for-men-women-free-black-autosite-original-imagapnvr6gqcnrt.jpeg?q=70" alt="Accessory 2">
+      <h2>Nylon Arm Sleeve For Men & Women </h2>
+      <p>Price: RS.89</p>
+      <button class="add-to-cart" onclick="addToCart('Nylon Arm Sleeve For Men & Women ', 89)">Add to Cart</button>
+    </div>
+    <div id="shopping-cart">
+ 
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: RS.<span id="cart-total">0.00</span></p>
+      <button type="submit" id="ordered" onclick="ordered()">Place Order</button>
+  </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/ksqeky80/wallet-card-wallet/r/c/3/new-high-quality-genuine-men-s-leather-wallet-12-1-wh2055-5-original-imag68hpn7dpzvca.jpeg?q=70" alt="Accessory 2">
+      <h2>Men Casual, Formal Maroon Genuine Leather RFID Wallet - Mini </h2>
+      <p>Price: RS.299</p>
+      <button class="add-to-cart" onclick="addToCart('Men Casual, Formal Maroon Genuine Leather RFID Wallet - Mini g', 299)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/wallet-card-wallet/a/x/t/-original-imagqwxntpeybddc.jpeg?q=70" alt="Accessory 2">
+      <h2>Men Tan Artificial Leather Wallet</h2>
+      <p>Price: RS.199</p>
+      <button class="add-to-cart" onclick="addToCart('Men Tan Artificial Leather Wallet', 199)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/kasjjww0/belt/v/x/w/one-size-style-unisex-leather-belt-gg-buckle-black-gold-000000-original-imafsaatmjhzhham.jpeg?q=70" alt="Accessory 2">
+      <h2>Men & Women Casual, Evening, Formal, Party Black Genuine Leather Belt</h2>
+      <p>Price: RS.249</p>
+      <button class="add-to-cart" onclick="addToCart('Men & Women Casual, Evening, Formal, Party Black Genuine Leather Belt', 249)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/perfume/8/6/s/80-mens-perfume-gift-set-4x20-ml-perfumes-luxury-scent-with-long-original-imagtchhth76eyak.jpeg?q=70" alt="Accessory 2">
+      <h2>Bella vita organic Mens Perfume Gift Set 4x20 ml Perfumes</h2>
+      <p>Price: RS.799</p>
+      <button class="add-to-cart" onclick="addToCart('Bella vita organic Mens Perfume Gift Set 4x20 ml Perfumes', 799)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/p/y/0/-original-imagg5rfsacakzqz.jpeg?q=70" alt="Accessory 2">
+      <h2>New Design Lightweight Stylish and Trendy walking shoes Walking Shoest</h2>
+      <p>Price: RS.499</p>
+      <button class="add-to-cart" onclick="addToCart('Men Tan Artificial Leather Wallet', 499)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/d/b/c/8-mrj2099-8-aadi-white-original-imagmkfyfyfn9kc8.jpeg?q=70" alt="Accessory 2">
+      <h2>Sneakers For Men</h2>
+      <p>Price: RS.199</p>
+      <button class="add-to-cart" onclick="addToCart('Sneakers For Men', 199)">Add to Cart</button>
+    </div>
+
+      <!-- Shopping Cart -->
+
+
+    <!-- Add more accessories products as needed -->
+  </section>
+ 
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>

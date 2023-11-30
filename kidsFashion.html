@@ -1,0 +1,116 @@
+<!-- kids-fashion.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport content="width=device-width, initial-scale=1.0" >
+  <title>Kids' Fashion - Stop&Shop</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="greeting"></h1>
+    <h1>Stop&Shop</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="womenFashion.html">Women's Fashion</a>
+    <a href="MensFashion.html">Men's Fashion</a>
+    <a href="kidsFashion.html">Kids' Fashion</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="sale.html">Sale</a>
+    <a href="LoginUser.html">Login/SignUp</a>
+  </nav>
+  <div id="notifybar">
+      
+  </div>
+
+  <section style="background-image: url(https://img.freepik.com/free-photo/shopping-cart-with-wooden-elements_23-2148879396.jpg?size=626&ext=jpg&ga=GA1.1.1091253011.1701182403&semt=ais);">
+    <!-- Kids' Fashion Products -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/sweatshirt/h/d/x/4-5-years-pro-ksw03-grn-provogue-original-imaggtqdamcve2gv.jpeg?q=70" alt="Kids' Product 1">
+      <h2>Boys Full Sleeve Color Block Hooded Sweatshirt</h2>
+      <p>Price: RS.699</p>
+      <button class="add-to-cart" onclick="addToCart('Boys Full Sleeve Color Block Hooded Sweatshirt', 699)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/s/t/k/8-9-years-kids-zarila-original-imagtyhztbpfrh8t.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Boys Regular Fit Solid Mandarin Collar Casual Shirt</h2>
+      <p>Price: RS.499</p>
+      <button class="add-to-cart" onclick="addToCart('Boys Regular Fit Solid Mandarin Collar Casual Shirt', 499)">Add to Cart</button>
+    </div>
+    <!-- Shopping Cart -->
+<div id="shopping-cart" style="background-image: url(https://img.freepik.com/free-photo/sales-concept-with-cart-bags_23-2147730827.jpg?size=626&ext=jpg&ga=GA1.1.1091253011.1701182403&semt=ais);">
+  <h2 align="center">Shopping Cart</h2>
+  <ul id="cart-items"></ul>
+  <p>Total: RS.<span id="cart-total">0.00</span></p>
+  <p align="center"><button type="submit" id="ordered" onclick="ordered()">Place Order</button></p>
+</div>
+
+  <!-- Add more kids' fashion products as needed -->
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/kwmfqfk0/kids-dress/f/8/8/6-9-months-baby-girl-printed-cotton-summer-wear-frock-dresses-original-imag99hhqcevphyq.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Baby Girls Midi/Knee Length Casual Dress</h2>
+      <p>Price: RS.299</p>
+      <button class="add-to-cart" onclick="addToCart('Baby Girls Midi/Knee Length Casual Dress ', 299)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/sweatshirt/q/u/v/4-5-years-pro-ksw06-grn-provogue-original-imaguvbgszp5kd4u.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Boys Full Sleeve Solid Hooded Sweatshirt</h2>
+      <p> RS.1499</p>
+      <button class="add-to-cart" onclick="addToCart('Boys Full Sleeve Solid Hooded Sweatshirt', 1499)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/kid-costume-wear/p/x/s/60-5-6-years-cpgl001a-ips-chandrika-72-original-imagn7ke4xfggenh.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Singham Dress</h2>
+      <p>Price: RS.699</p>
+      <button class="add-to-cart" onclick="addToCart('Singham Dress', 699)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/kids-apparel-combo/t/d/z/12-13-years-ky5-redset-rcbvirat-uniq-original-imaghjmpxhdanksb.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Virat Kohli Jersey</h2>
+      <p>Price: RS.499</p>
+      <button class="add-to-cart" onclick="addToCart('Virat Kohli Jersey', 499)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/kqgyhe80/kids-dress/i/a/l/0-3-months-fe2644w-wishkaro-original-imag4h6cgkhhemyn.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Baby Girls Maxi/Full Length Party Dress  </h2>
+      <p>Price: RS.599</p>
+      <button class="add-to-cart" onclick="addToCart('Baby Girls Maxi/Full Length Party Dress  ', 599)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/kids-ethnic-set/b/j/j/3-4-years-nckp227-patiyala-cosmos-art-enterprise-original-imagnzegyre7kudv.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Boys Festive & Party Kurta and Patiala Set </h2>
+      <p>Price: RS.899</p>
+      <button class="add-to-cart" onclick="addToCart('Boys Festive & Party Kurta and Patiala Set ', 899)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/kids-dress/b/x/u/3-4-years-stripe-frock-sleevless-manaitri-original-imagn34gxkbngpyh.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Baby Girls Below Knee Casual Dress </h2>
+      <p>Price: RS.799</p>
+      <button class="add-to-cart" onclick="addToCart('Baby Girls Below Knee Casual Dress ', 799)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/832/832/jraycnk0/kid-costume-wear/x/g/f/60-kfd179-2-kaku-fancy-dresses-72-original-imaf7wuz5ggea9nk.jpeg?q=70" alt="Kids' Product 2">
+      <h2>Ram Costume Of Ramleela</h2>
+      <p>Price: RS.1999</p>
+      <button class="add-to-cart" onclick="addToCart('Ram Costume Of Ramleela', 1999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXrS1V9tWT9R3x7KbbkmM0gk1_X86BuU_t0w&usqp=CAU" alt="Kids' Product 2">
+      <h2>Adorable Boys' Outfit</h2>
+      <p>Price: RS.1249</p>
+      <button class="add-to-cart" onclick="addToCart('Adorable Boys\' Outfit', 1249)">Add to Cart</button>
+    </div>
+      
+  </section>
+ 
+
+  <script src="script.js"></script>
+
+</body>
+</html>
